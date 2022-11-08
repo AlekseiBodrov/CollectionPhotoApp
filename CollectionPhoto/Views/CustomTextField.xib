@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTextField" customModule="CollectionPhoto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeL-eX-nkT">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QeL-eX-nkT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2E6-IP-W7t"/>
+                <constraint firstItem="QeL-eX-nkT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8kt-Hk-KyJ"/>
+                <constraint firstAttribute="bottom" secondItem="QeL-eX-nkT" secondAttribute="bottom" id="O0E-GV-utX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QeL-eX-nkT" secondAttribute="trailing" id="XMN-y7-XZ0"/>
+                <constraint firstItem="QeL-eX-nkT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fLW-Av-XOn"/>
+                <constraint firstItem="QeL-eX-nkT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fwk-0q-7fU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textField" destination="QeL-eX-nkT" id="MjV-u6-yH5"/>
+            </connections>
+            <point key="canvasLocation" x="57.692307692307693" y="281.51658767772511"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		D7C6B8E8291AB445008A41E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */; };
 		D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */; };
-		D7C6B8EC291AB445008A41E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8EB291AB445008A41E0 /* ViewController.swift */; };
 		D7C6B8EF291AB445008A41E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B8ED291AB445008A41E0 /* Main.storyboard */; };
 		D7C6B8F1291AB448008A41E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B8F0291AB448008A41E0 /* Assets.xcassets */; };
 		D7C6B8F4291AB448008A41E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B8F2291AB448008A41E0 /* LaunchScreen.storyboard */; };
+		D7C6B903291AB8BA008A41E0 /* CustomImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B902291AB8BA008A41E0 /* CustomImageView.xib */; };
+		D7C6B905291AB8EF008A41E0 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B904291AB8EF008A41E0 /* CustomTextField.xib */; };
+		D7C6B907291AB921008A41E0 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B906291AB921008A41E0 /* CustomButton.xib */; };
+		D7C6B909291ABBE6008A41E0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B908291ABBE6008A41E0 /* CustomButton.swift */; };
+		D7C6B90B291ABC02008A41E0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B90A291ABC02008A41E0 /* CustomTextField.swift */; };
+		D7C6B90D291ABC0E008A41E0 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B90C291ABC0E008A41E0 /* CustomImageView.swift */; };
+		D7C6B910291ABF3B008A41E0 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */; };
+		D7C6B912291ABF51008A41E0 /* AppendPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */; };
+		D7C6B914291ABF63008A41E0 /* ShowPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7C6B8E4291AB445008A41E0 /* CollectionPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7C6B8EB291AB445008A41E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7C6B8EE291AB445008A41E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7C6B8F0291AB448008A41E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7C6B8F3291AB448008A41E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7C6B8F5291AB448008A41E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C6B902291AB8BA008A41E0 /* CustomImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomImageView.xib; sourceTree = "<group>"; };
+		D7C6B904291AB8EF008A41E0 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		D7C6B906291AB921008A41E0 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		D7C6B908291ABBE6008A41E0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D7C6B90A291ABC02008A41E0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D7C6B90C291ABC0E008A41E0 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppendPhotoViewController.swift; sourceTree = "<group>"; };
+		D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,40 @@
 		D7C6B8E6291AB445008A41E0 /* CollectionPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				D7C6B90E291ABE1F008A41E0 /* Controllers */,
+				D7C6B901291AB896008A41E0 /* Views */,
 				D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */,
 				D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */,
-				D7C6B8EB291AB445008A41E0 /* ViewController.swift */,
 				D7C6B8ED291AB445008A41E0 /* Main.storyboard */,
 				D7C6B8F0291AB448008A41E0 /* Assets.xcassets */,
 				D7C6B8F2291AB448008A41E0 /* LaunchScreen.storyboard */,
 				D7C6B8F5291AB448008A41E0 /* Info.plist */,
 			);
 			path = CollectionPhoto;
+			sourceTree = "<group>";
+		};
+		D7C6B901291AB896008A41E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6B902291AB8BA008A41E0 /* CustomImageView.xib */,
+				D7C6B90C291ABC0E008A41E0 /* CustomImageView.swift */,
+				D7C6B904291AB8EF008A41E0 /* CustomTextField.xib */,
+				D7C6B90A291ABC02008A41E0 /* CustomTextField.swift */,
+				D7C6B906291AB921008A41E0 /* CustomButton.xib */,
+				D7C6B908291ABBE6008A41E0 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7C6B90E291ABE1F008A41E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */,
+				D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */,
+				D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */,
+			);
+			name = Controllers;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C6B905291AB8EF008A41E0 /* CustomTextField.xib in Resources */,
+				D7C6B903291AB8BA008A41E0 /* CustomImageView.xib in Resources */,
+				D7C6B907291AB921008A41E0 /* CustomButton.xib in Resources */,
 				D7C6B8F4291AB448008A41E0 /* LaunchScreen.storyboard in Resources */,
 				D7C6B8F1291AB448008A41E0 /* Assets.xcassets in Resources */,
 				D7C6B8EF291AB445008A41E0 /* Main.storyboard in Resources */,
@@ -138,9 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C6B8EC291AB445008A41E0 /* ViewController.swift in Sources */,
+				D7C6B914291ABF63008A41E0 /* ShowPhotoViewController.swift in Sources */,
+				D7C6B910291ABF3B008A41E0 /* AuthorizationViewController.swift in Sources */,
+				D7C6B90B291ABC02008A41E0 /* CustomTextField.swift in Sources */,
+				D7C6B90D291ABC0E008A41E0 /* CustomImageView.swift in Sources */,
 				D7C6B8E8291AB445008A41E0 /* AppDelegate.swift in Sources */,
+				D7C6B909291ABBE6008A41E0 /* CustomButton.swift in Sources */,
 				D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */,
+				D7C6B912291ABF51008A41E0 /* AppendPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
