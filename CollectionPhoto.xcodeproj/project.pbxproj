@@ -74,7 +74,7 @@
 		D7C6B8E6291AB445008A41E0 /* CollectionPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				D7C6B90E291ABE1F008A41E0 /* Controllers */,
+				D7C6B917291B6EAA008A41E0 /* Controllers */,
 				D7C6B901291AB896008A41E0 /* Views */,
 				D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */,
 				D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */,
@@ -99,7 +99,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D7C6B90E291ABE1F008A41E0 /* Controllers */ = {
+		D7C6B917291B6EAA008A41E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D7C6B915291B5B55008A41E0 /* BaseController.swift */,
@@ -107,8 +107,7 @@
 				D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */,
 				D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */,
 			);
-			name = Controllers;
-			path = "New Group";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
