@@ -2,7 +2,6 @@ import UIKit
 
 class CustomImageView: UIView {
 
-
     @IBOutlet weak var imageView: UIImageView!
 
     static func instanceFromNib() -> CustomImageView {

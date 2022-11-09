@@ -21,6 +21,7 @@
 		D7C6B910291ABF3B008A41E0 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */; };
 		D7C6B912291ABF51008A41E0 /* AppendPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */; };
 		D7C6B914291ABF63008A41E0 /* ShowPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */; };
+		D7C6B916291B5B55008A41E0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B915291B5B55008A41E0 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppendPhotoViewController.swift; sourceTree = "<group>"; };
 		D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoViewController.swift; sourceTree = "<group>"; };
+		D7C6B915291B5B55008A41E0 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		D7C6B90E291ABE1F008A41E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D7C6B915291B5B55008A41E0 /* BaseController.swift */,
 				D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */,
 				D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */,
 				D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */,
@@ -187,6 +190,7 @@
 				D7C6B90B291ABC02008A41E0 /* CustomTextField.swift in Sources */,
 				D7C6B90D291ABC0E008A41E0 /* CustomImageView.swift in Sources */,
 				D7C6B8E8291AB445008A41E0 /* AppDelegate.swift in Sources */,
+				D7C6B916291B5B55008A41E0 /* BaseController.swift in Sources */,
 				D7C6B909291ABBE6008A41E0 /* CustomButton.swift in Sources */,
 				D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */,
 				D7C6B912291ABF51008A41E0 /* AppendPhotoViewController.swift in Sources */,
