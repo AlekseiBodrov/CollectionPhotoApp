@@ -6,6 +6,7 @@ protocol AppendPhotoViewControllerDelegate: AnyObject {
 
 final class AppendPhotoViewController: BaseController {
 
+    //MARK: - var\let
     weak var delegate: AppendPhotoViewControllerDelegate?
 
     //MARK: - life cycle funcs
@@ -14,24 +15,9 @@ final class AppendPhotoViewController: BaseController {
         leftButton.removeFromSuperview()
     }
 
-    override func configure() {
-        super.configure()
-
-        customTextField.placeholder(text: "Set name photo")
-
-        showDefaultPhoto()
-
-        let recognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeDetected))
-        view.addGestureRecognizer(recognizer)
-
-        let recognizerImage = UITapGestureRecognizer(target: self, action: #selector(tapImageDetected))
-        customImageView.addGestureRecognizer(recognizerImage)
-    }
-
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        rightButton.configure(text: "V", systemNameImage: nil)
-   //        rightButton.configure(text: nil, systemNameImage: "plus")
+        rightButton.configure(text: "ok", systemNameImage: nil)
     }
 
     //MARK: - objc funcs
@@ -48,8 +34,19 @@ final class AppendPhotoViewController: BaseController {
     }
 
     //MARK: - flow funcs
-    override func constraints() {
-        super.constraints()
+
+    override func configure() {
+        super.configure()
+
+        customTextField.placeholder(text: "Set name photo")
+
+        showDefaultPhoto()
+
+        let recognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeDetected))
+        view.addGestureRecognizer(recognizer)
+
+        let recognizerImage = UITapGestureRecognizer(target: self, action: #selector(tapImageDetected))
+        customImageView.addGestureRecognizer(recognizerImage)
     }
 
     override func actionForRightButton() {
@@ -58,12 +55,11 @@ final class AppendPhotoViewController: BaseController {
         delegate?.reloadData()
     }
 
-    func saveData() {
+    private func saveData() {
         guard let text = customTextField.textField.text else { return }
         guard let image = customImageView.imageView.image else { return }
         Manager.photoArray.append(PhotoModel(name: text, image: image))
 
-        Manager.photoArray.forEach( { print($0.name) } )
         customTextField.textField.text = nil
         showDefaultPhoto()
 
@@ -75,7 +71,7 @@ final class AppendPhotoViewController: BaseController {
     }
 
     private func showDefaultPhoto() {
-        customImageView.imageView.image = UIImage(systemName: "plus")
+        customImageView.imageView.image = UIImage(named: "plus")
     }
 }
 
@@ -88,7 +84,6 @@ extension AppendPhotoViewController:UIImagePickerControllerDelegate & UINavigati
         } else if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             self.customImageView.imageView.image = image
         }
-
         picker.dismiss(animated: true)
     }
 }

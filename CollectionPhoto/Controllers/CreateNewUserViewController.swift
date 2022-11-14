@@ -1,7 +1,8 @@
 import UIKit
 
-class CreateNewUserViewController: BaseController {
+final class CreateNewUserViewController: BaseController {
 
+    //MARK: - var\let
     let mailTextField = CustomTextField.instanceFromNib()
     let passwordTextField = CustomTextField.instanceFromNib()
 
@@ -19,6 +20,7 @@ class CreateNewUserViewController: BaseController {
     //        rightButton.configure(text: nil, systemNameImage: "plus")
     }
 
+    //MARK: - flow funcs
     override func configure() {
         super.configure()
 
@@ -27,8 +29,6 @@ class CreateNewUserViewController: BaseController {
         view.addSubview(mailTextField)
         view.addSubview(passwordTextField)
     }
-
-    //MARK: - flow funcs
 
     override func actionForLeftButton() {
         super.actionForLeftButton()

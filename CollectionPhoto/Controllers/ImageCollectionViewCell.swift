@@ -1,6 +1,6 @@
 import UIKit
 
-class Cell: UICollectionViewCell {
+final class Cell: UICollectionViewCell {
 
     lazy var firstImage: UIImageView = {
         let imageView = UIImageView()
@@ -11,6 +11,7 @@ class Cell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+
         containerView.addSubview(firstImage)
         contentView.addSubview(containerView)
     }
@@ -21,7 +22,6 @@ class Cell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-
         containerView.translatesAutoresizingMaskIntoConstraints = false
         firstImage.translatesAutoresizingMaskIntoConstraints = false
 
@@ -41,6 +41,8 @@ class Cell: UICollectionViewCell {
 
     func configure(with photo: PhotoModel) {
         firstImage.image = photo.image
+        containerView.layer.cornerRadius = 10
+        containerView.clipsToBounds = true
     }
 
 }

@@ -2,7 +2,7 @@ import UIKit
 
 final class PhotoModel {
 
-    let name: String
+    var name: String
     let image: UIImage?
 
     init(name: String, image: UIImage?) {

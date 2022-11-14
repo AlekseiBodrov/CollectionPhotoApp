@@ -1,7 +1,8 @@
 import UIKit
 
-class CollectionImageViewController: BaseController {
+final class CollectionImageViewController: BaseController {
 
+    //MARK: - var\let
     private enum Constants {
         static let space: CGFloat = 15
     }
@@ -12,6 +13,7 @@ class CollectionImageViewController: BaseController {
         return view
     }()
 
+    //MARK: - life cycle funcs
     override func loadView() {
         self.view = UIView()
     }
@@ -19,18 +21,6 @@ class CollectionImageViewController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-
-    override func configure() {
-        super.configure()
-        view.addSubview(collectionView)
-
-        collectionView.backgroundColor = .white
-        collectionView.register(Cell.self, forCellWithReuseIdentifier: "Cell")
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.reloadData()
-        view.backgroundColor = .white
     }
 
     override func viewDidLayoutSubviews() {
@@ -44,6 +34,19 @@ class CollectionImageViewController: BaseController {
             collectionView.bottomAnchor.constraint(equalTo: customImageView.bottomAnchor,constant: -1),
         ])
     }
+    
+    //MARK: - flow funcs
+    override func configure() {
+        super.configure()
+        view.addSubview(collectionView)
+
+        collectionView.backgroundColor = .white
+        collectionView.register(Cell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.reloadData()
+        view.backgroundColor = .white
+    }
 
     override func touchDownRightButtonPressed() {
         super.touchDownRightButtonPressed()
@@ -53,6 +56,7 @@ class CollectionImageViewController: BaseController {
     }
 }
 
+//MARK: - extension
 extension CollectionImageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         Manager.photoArray.count

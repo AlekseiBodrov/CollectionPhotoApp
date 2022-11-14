@@ -56,7 +56,7 @@ class BaseController: UIViewController {
         rightButton.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            customImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            customImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
             customImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             customImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
 

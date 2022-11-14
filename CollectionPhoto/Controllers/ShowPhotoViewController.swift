@@ -4,11 +4,18 @@ import UIKit
 
 final class ShowPhotoViewController: BaseController {
 
+    //MARK: - var\let
     var currentIndex = Manager.photoArray.count - 1
 
     private var counter = Manager.photoArray.count - 1
 
     //MARK: - life cycle funcs
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        customTextField.textField.delegate = self
+    }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         leftButton.configure(text: "<", systemNameImage: nil)
@@ -51,19 +58,31 @@ final class ShowPhotoViewController: BaseController {
 
     private func showNextPhoto() {
         counter += 1
-        if counter == Manager.photoArray.count {
-            counter = 0
-        }
+
+        counter = counter == Manager.photoArray.count ? 0 : counter
+
         customTextField.textField.text = Manager.photoArray[counter].name
         customImageView.imageView.image = Manager.photoArray[counter].image
     }
 
     private func showLastPhoto() {
         counter -= 1
-        if counter == -1 {
-            counter = Manager.photoArray.count - 1
-        }
+        counter = counter == -1 ? (Manager.photoArray.count - 1) : counter
+
         customTextField.textField.text = Manager.photoArray[counter].name
         customImageView.imageView.image = Manager.photoArray[counter].image
     }
+}
+
+//MARK: - extension
+extension ShowPhotoViewController: UITextFieldDelegate{
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        guard let text = customTextField.textField.text else { return false }
+        Manager.photoArray[counter].name = text
+        return true
+    }
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        guard let text = customTextField.textField.text else { return }
+//        Manager.photoArray[counter].name = text
+//    }
 }
