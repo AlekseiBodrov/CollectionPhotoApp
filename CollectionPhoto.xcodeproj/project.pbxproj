@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7752E722922BBE800358DF2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E712922BBE800358DF2 /* Manager.swift */; };
+		D7752E742922BC0300358DF2 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E732922BC0300358DF2 /* PhotoModel.swift */; };
 		D7C6B8E8291AB445008A41E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */; };
 		D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */; };
 		D7C6B8EF291AB445008A41E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B8ED291AB445008A41E0 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7752E712922BBE800358DF2 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D7752E732922BC0300358DF2 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		D7C6B8E4291AB445008A41E0 /* CollectionPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		D7C6B8E6291AB445008A41E0 /* CollectionPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				D7752E712922BBE800358DF2 /* Manager.swift */,
+				D7752E732922BC0300358DF2 /* PhotoModel.swift */,
 				D7C6B917291B6EAA008A41E0 /* Controllers */,
 				D7C6B901291AB896008A41E0 /* Views */,
 				D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */,
@@ -192,7 +198,9 @@
 				D7C6B916291B5B55008A41E0 /* BaseController.swift in Sources */,
 				D7C6B909291ABBE6008A41E0 /* CustomButton.swift in Sources */,
 				D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */,
+				D7752E742922BC0300358DF2 /* PhotoModel.swift in Sources */,
 				D7C6B912291ABF51008A41E0 /* AppendPhotoViewController.swift in Sources */,
+				D7752E722922BBE800358DF2 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
