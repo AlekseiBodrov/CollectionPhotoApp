@@ -1,6 +1,12 @@
 import UIKit
 
+protocol AppendPhotoViewControllerDelegate: AnyObject {
+    func reloadData()
+}
+
 final class AppendPhotoViewController: BaseController {
+
+    weak var delegate: AppendPhotoViewControllerDelegate?
 
     //MARK: - life cycle funcs
     override func viewDidLoad() {
@@ -10,7 +16,10 @@ final class AppendPhotoViewController: BaseController {
 
     override func configure() {
         super.configure()
-        customImageView.imageView.image = UIImage(systemName: "plus")
+
+        customTextField.placeholder(text: "Set name photo")
+
+        showDefaultPhoto()
 
         let recognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeDetected))
         view.addGestureRecognizer(recognizer)
@@ -45,6 +54,28 @@ final class AppendPhotoViewController: BaseController {
 
     override func actionForRightButton() {
         super.actionForRightButton()
+        saveData()
+        delegate?.reloadData()
+    }
+
+    func saveData() {
+        guard let text = customTextField.textField.text else { return }
+        guard let image = customImageView.imageView.image else { return }
+        Manager.photoArray.append(PhotoModel(name: text, image: image))
+
+        Manager.photoArray.forEach( { print($0.name) } )
+        customTextField.textField.text = nil
+        showDefaultPhoto()
+
+        Manager.saveData()
+
+
+//            Manager.userPickNumber = textInt
+//            presentViewController()
+    }
+
+    private func showDefaultPhoto() {
+        customImageView.imageView.image = UIImage(systemName: "plus")
     }
 }
 

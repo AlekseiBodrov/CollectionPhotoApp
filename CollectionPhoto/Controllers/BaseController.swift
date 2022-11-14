@@ -51,7 +51,7 @@ class BaseController: UIViewController {
     func constraints(){
         customImageView.translatesAutoresizingMaskIntoConstraints = false
         customTextField.translatesAutoresizingMaskIntoConstraints = false
-        
+
         leftButton.translatesAutoresizingMaskIntoConstraints = false
         rightButton.translatesAutoresizingMaskIntoConstraints = false
 

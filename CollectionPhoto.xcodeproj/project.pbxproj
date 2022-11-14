@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D7752E722922BBE800358DF2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E712922BBE800358DF2 /* Manager.swift */; };
 		D7752E742922BC0300358DF2 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E732922BC0300358DF2 /* PhotoModel.swift */; };
+		D7752E762922BC7B00358DF2 /* CollectionImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E752922BC7B00358DF2 /* CollectionImageViewController.swift */; };
+		D7752E782922BC9600358DF2 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E772922BC9600358DF2 /* ImageCollectionViewCell.swift */; };
+		D7752E7A2922BCAB00358DF2 /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7752E792922BCAB00358DF2 /* CreateNewUserViewController.swift */; };
 		D7C6B8E8291AB445008A41E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */; };
 		D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */; };
 		D7C6B8EF291AB445008A41E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C6B8ED291AB445008A41E0 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		D7752E712922BBE800358DF2 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D7752E732922BC0300358DF2 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		D7752E752922BC7B00358DF2 /* CollectionImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImageViewController.swift; sourceTree = "<group>"; };
+		D7752E772922BC9600358DF2 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7752E792922BCAB00358DF2 /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
 		D7C6B8E4291AB445008A41E0 /* CollectionPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C6B8E7291AB445008A41E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7C6B8E9291AB445008A41E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,9 @@
 			children = (
 				D7C6B915291B5B55008A41E0 /* BaseController.swift */,
 				D7C6B90F291ABF3B008A41E0 /* AuthorizationViewController.swift */,
+				D7752E752922BC7B00358DF2 /* CollectionImageViewController.swift */,
+				D7752E772922BC9600358DF2 /* ImageCollectionViewCell.swift */,
+				D7752E792922BCAB00358DF2 /* CreateNewUserViewController.swift */,
 				D7C6B911291ABF51008A41E0 /* AppendPhotoViewController.swift */,
 				D7C6B913291ABF63008A41E0 /* ShowPhotoViewController.swift */,
 			);
@@ -190,12 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7752E762922BC7B00358DF2 /* CollectionImageViewController.swift in Sources */,
 				D7C6B914291ABF63008A41E0 /* ShowPhotoViewController.swift in Sources */,
+				D7752E782922BC9600358DF2 /* ImageCollectionViewCell.swift in Sources */,
 				D7C6B910291ABF3B008A41E0 /* AuthorizationViewController.swift in Sources */,
 				D7C6B90B291ABC02008A41E0 /* CustomTextField.swift in Sources */,
 				D7C6B90D291ABC0E008A41E0 /* CustomImageView.swift in Sources */,
 				D7C6B8E8291AB445008A41E0 /* AppDelegate.swift in Sources */,
 				D7C6B916291B5B55008A41E0 /* BaseController.swift in Sources */,
+				D7752E7A2922BCAB00358DF2 /* CreateNewUserViewController.swift in Sources */,
 				D7C6B909291ABBE6008A41E0 /* CustomButton.swift in Sources */,
 				D7C6B8EA291AB445008A41E0 /* SceneDelegate.swift in Sources */,
 				D7752E742922BC0300358DF2 /* PhotoModel.swift in Sources */,

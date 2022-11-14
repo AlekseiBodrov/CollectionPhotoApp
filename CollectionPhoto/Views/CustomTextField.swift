@@ -11,4 +11,8 @@ class CustomTextField: UIView {
     func configure(text: String) {
         textField.text = text
     }
+
+    func placeholder(text: String) {
+        textField.placeholder = text
+    }
 }

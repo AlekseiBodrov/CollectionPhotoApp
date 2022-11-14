@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TEI-Gl-jMH"/>
+                        <segue destination="ay4-lr-ngD" kind="relationship" relationship="rootViewController" id="3Pv-Hx-Sjp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMr-uv-2j5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -55,16 +55,17 @@
             </objects>
             <point key="canvasLocation" x="54" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Collection Image View Controller-->
         <scene sceneID="X9b-IL-XPa">
             <objects>
-                <viewController id="ay4-lr-ngD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CollectionImageViewController" id="ay4-lr-ngD" customClass="CollectionImageViewController" customModule="CollectionPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MVi-Zl-KF9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="BFi-3K-6ub"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KnS-17-sMz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEI-Kw-9Eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
