@@ -64,10 +64,6 @@ final class AppendPhotoViewController: BaseController {
         showDefaultPhoto()
 
         Manager.saveData()
-
-
-//            Manager.userPickNumber = textInt
-//            presentViewController()
     }
 
     private func showDefaultPhoto() {

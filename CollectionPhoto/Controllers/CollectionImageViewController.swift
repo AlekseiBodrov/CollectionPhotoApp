@@ -20,7 +20,7 @@ final class CollectionImageViewController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        customTextField.removeFromSuperview()
     }
 
     override func viewDidLayoutSubviews() {
@@ -79,7 +79,7 @@ extension CollectionImageViewController: UICollectionViewDelegateFlowLayout {
 extension CollectionImageViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ShowPhotoViewController") as? ShowPhotoViewController else { return }
-        controller.currentIndex = indexPath.row
+        controller.index = indexPath.row
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }

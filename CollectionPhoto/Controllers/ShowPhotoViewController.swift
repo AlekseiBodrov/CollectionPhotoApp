@@ -5,15 +5,13 @@ import UIKit
 final class ShowPhotoViewController: BaseController {
 
     //MARK: - var\let
-    var currentIndex = Manager.photoArray.count - 1
 
-    private var counter = Manager.photoArray.count - 1
+    var index: Int = 0
 
     //MARK: - life cycle funcs
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        customTextField.textField.delegate = self
     }
 
     override func viewDidLayoutSubviews() {
@@ -25,6 +23,7 @@ final class ShowPhotoViewController: BaseController {
 
     //MARK: - objc funcs
     @objc private func swipeDetected() {
+        saveTextFromTextField()
         self.navigationController?.popViewController(animated: true)
     }
 
@@ -34,8 +33,8 @@ final class ShowPhotoViewController: BaseController {
         if Manager.photoArray.isEmpty {
             showDefaultPhoto()
         } else {
-            customTextField.textField.text = Manager.photoArray[currentIndex].name
-            customImageView.imageView.image = Manager.photoArray[currentIndex].image
+            customTextField.textField.text = Manager.photoArray[index].name
+            customImageView.imageView.image = Manager.photoArray[index].image
         }
 
         let recognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeDetected))
@@ -44,12 +43,19 @@ final class ShowPhotoViewController: BaseController {
 
     override func actionForLeftButton() {
         super.actionForLeftButton()
+        saveTextFromTextField()
         showLastPhoto()
     }
 
     override func actionForRightButton() {
         super.actionForRightButton()
+        saveTextFromTextField()
         showNextPhoto()
+    }
+
+    func saveTextFromTextField() {
+        guard let text = customTextField.textField.text else { return }
+        Manager.photoArray[index].name = text
     }
 
     private func showDefaultPhoto() {
@@ -57,32 +63,19 @@ final class ShowPhotoViewController: BaseController {
     }
 
     private func showNextPhoto() {
-        counter += 1
+        index += 1
 
-        counter = counter == Manager.photoArray.count ? 0 : counter
+        index = index == Manager.photoArray.count ? 0 : index
 
-        customTextField.textField.text = Manager.photoArray[counter].name
-        customImageView.imageView.image = Manager.photoArray[counter].image
+        customTextField.textField.text = Manager.photoArray[index].name
+        customImageView.imageView.image = Manager.photoArray[index].image
     }
 
     private func showLastPhoto() {
-        counter -= 1
-        counter = counter == -1 ? (Manager.photoArray.count - 1) : counter
+        index -= 1
+        index = index == -1 ? (Manager.photoArray.count - 1) : index
 
-        customTextField.textField.text = Manager.photoArray[counter].name
-        customImageView.imageView.image = Manager.photoArray[counter].image
+        customTextField.textField.text = Manager.photoArray[index].name
+        customImageView.imageView.image = Manager.photoArray[index].image
     }
-}
-
-//MARK: - extension
-extension ShowPhotoViewController: UITextFieldDelegate{
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        guard let text = customTextField.textField.text else { return false }
-        Manager.photoArray[counter].name = text
-        return true
-    }
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        guard let text = customTextField.textField.text else { return }
-//        Manager.photoArray[counter].name = text
-//    }
 }

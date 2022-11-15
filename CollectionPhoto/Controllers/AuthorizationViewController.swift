@@ -87,6 +87,6 @@ final class AuthorizationViewController: BaseController {
 //    }
 }
 
-extension AuthorizationViewController: UITextFieldDelegate {
+extension AuthorizationViewController{
 
 }
